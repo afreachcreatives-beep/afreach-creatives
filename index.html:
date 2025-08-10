@@ -1,158 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Afreach Creatives</title>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Afreach Creatives — social media, PR, branding, websites & posters." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afreach Creatives</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container header-row">
-      <div class="brand">
-        <!-- Logo placeholder — replace with /logo.png later -->
-        <div class="logo-placeholder" aria-hidden="true">AC</div>
-        <div class="brand-text">
-          <div class="brand-name">Afreach<span class="accent"> Creatives</span></div>
-          <div class="brand-sub">Creative agency — social media • PR • branding • web</div>
-        </div>
-      </div>
+    <header>
+        <div class="logo">Afreach Creatives</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-      <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
-
-      <nav id="nav" class="nav">
-        <a href="#services">Services</a>
-        <a href="#posters">Posters</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact" class="cta">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <h1 class="reveal">We design. We tell your story. We grow your brand.</h1>
-          <p class="lead reveal delay-1">
-            Afreach Creatives creates bold social campaigns, memorable logos, press-ready PR and high-converting websites.
-            Posters & visuals that cut through the noise.
-          </p>
-
-          <div class="actions reveal delay-2">
-            <a class="btn" href="#services">Our Services</a>
-            <a class="btn ghost" href="#posters">See Posters</a>
-          </div>
-        </div>
-
-        <aside class="hero-card reveal delay-3">
-          <div class="stat"><strong>10+</strong><span>Brands launched</span></div>
-          <div class="stat"><strong>5x</strong><span>Avg engagement lift</span></div>
-          <div class="stat"><strong>Full</strong><span>Creative + Web</span></div>
-        </aside>
-      </div>
+        <h1>We Bring Your Brand to Life</h1>
+        <p>Social Media Management • PR • Logos • Websites • Posters</p>
+        <a href="#contact" class="cta-btn">Work With Us</a>
     </section>
 
-    <section id="services" class="section">
-      <div class="container">
-        <h2 class="section-title reveal">Services we offer</h2>
-        <div class="grid services-grid">
-          <article class="card reveal">
-            <div class="icon">📱</div>
-            <h3>Social Media</h3>
-            <p>Strategy, content calendars, creative posts and ad campaigns that convert.</p>
-          </article>
-
-          <article class="card reveal delay-1">
-            <div class="icon">📝</div>
-            <h3>PR & Outreach</h3>
-            <p>Storytelling, media lists and placements to build credibility.</p>
-          </article>
-
-          <article class="card reveal delay-2">
-            <div class="icon">🎨</div>
-            <h3>Logo & Branding</h3>
-            <p>Distinctive brand marks and visual systems for use across all channels.</p>
-          </article>
-
-          <article class="card reveal delay-3">
-            <div class="icon">🌐</div>
-            <h3>Web Design</h3>
-            <p>Responsive, SEO-friendly websites built to showcase your work and collect leads.</p>
-          </article>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-card">Social Media Management</div>
+            <div class="service-card">Public Relations</div>
+            <div class="service-card">Logo Design</div>
+            <div class="service-card">Website Design</div>
+            <div class="service-card">Posters & Graphics</div>
         </div>
-      </div>
     </section>
 
-    <section id="posters" class="section posters-section">
-      <div class="container">
-        <h2 class="section-title reveal">Posters — Creative Samples</h2>
-        <p class="muted reveal delay-1">Replace these placeholders with your artwork by uploading images to the repo (folder: <code>/images/posters</code>).</p>
-
-        <div class="posters-grid">
-          <!-- Poster placeholders: replace each .poster > img src with your image path -->
-          <figure class="poster reveal">
-            <div class="poster-img">Poster 1</div>
-            <figcaption>Event Poster — bold typographic layout</figcaption>
-          </figure>
-
-          <figure class="poster reveal delay-1">
-            <div class="poster-img">Poster 2</div>
-            <figcaption>Product Launch — colorful visuals</figcaption>
-          </figure>
-
-          <figure class="poster reveal delay-2">
-            <div class="poster-img">Poster 3</div>
-            <figcaption>Brand Campaign — social card set</figcaption>
-          </figure>
-
-          <figure class="poster reveal delay-3">
-            <div class="poster-img">Poster 4</div>
-            <figcaption>Flyer — print-ready layout</figcaption>
-          </figure>
-        </div>
-      </div>
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <p>Coming Soon...</p>
     </section>
 
-    <section id="portfolio" class="section">
-      <div class="container">
-        <h2 class="section-title reveal">Portfolio</h2>
-        <p class="muted reveal delay-1">Add projects in the repository's <code>/images/portfolio</code> folder and link them here.</p>
-        <div class="portfolio-grid">
-          <div class="work-card reveal">Project 1</div>
-          <div class="work-card reveal delay-1">Project 2</div>
-          <div class="work-card reveal delay-2">Project 3</div>
-        </div>
-      </div>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@afreachcreatives.com">info@afreachcreatives.com</a></p>
+        <p>Phone: +254 700 000 000</p>
     </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container contact-grid reveal">
-        <div>
-          <h2>Let's work together</h2>
-          <p class="muted">Email: <a href="mailto:hello@afreachcreatives.com">hello@afreachcreatives.com</a></p>
-          <p class="muted">Phone: +254 7XX XXX XXX</p>
-          <p><a class="btn" href="mailto:hello@afreachcreatives.com">Get a Quote</a></p>
-        </div>
+    <footer>
+        <p>&copy; 2025 Afreach Creatives. All Rights Reserved.</p>
+    </footer>
 
-        <form class="contact-form" action="mailto:hello@afreachcreatives.com" method="post" enctype="text/plain">
-          <label><input name="Name" placeholder="Your name" required /></label>
-          <label><input name="Email" placeholder="Your email" required /></label>
-          <label><textarea name="Message" rows="4" placeholder="Tell us about your project" required></textarea></label>
-          <button class="btn" type="submit">Send message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-row">
-      <div>© <strong>Afreach Creatives</strong> 2025</div>
-      <div class="socials"><a href="#">Instagram</a> · <a href="#">LinkedIn</a></div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
