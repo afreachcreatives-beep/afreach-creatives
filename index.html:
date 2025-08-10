@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afreach Creatives</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #00c6ff, #ff6b6b);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .service-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .cta a {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        .cta a:hover {
+            background-color: #ff3b3b;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        @media (min-width: 700px) {
+            .services {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Afreach Creatives</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Social Media Management</h3>
+                <p>We create, schedule, and manage engaging content for your brand across social platforms.</p>
+            </div>
+            <div class="service-card">
+                <h3>Public Relations (PR)</h3>
+                <p>We craft compelling brand stories and manage your public image to grow trust and credibility.</p>
+            </div>
+            <div class="service-card">
+                <h3>Logo Design</h3>
+                <p>Stand out with a unique, professional logo tailored to your brand’s identity.</p>
+            </div>
+            <div class="service-card">
+                <h3>Website Development</h3>
+                <p>Get a modern, mobile-friendly, and functional website that converts visitors into clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta">
+        <h2>Let’s Work Together</h2>
+        <a href="mailto:afreachcreatives@example.com">Contact Us</a>
+    </section>
+
+    <footer>
+        &copy; 2025 Afreach Creatives. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
