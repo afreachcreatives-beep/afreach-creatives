@@ -1,4 +1,3 @@
-// Simple welcome message
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Welcome to Afreach Creatives!");
+// Simple welcome document.addEventListener("DOMContentLoaded", () => {
+    console.log("Afreach Creatives website loaded successfully!");
 });
