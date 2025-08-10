@@ -1,126 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Afreach Creatives</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(90deg, #00c6ff, #ff6b6b);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        section {
-            padding: 30px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .services {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        .service-card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
-        }
-        .cta {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .cta a {
-            background-color: #ff6b6b;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: 0.3s;
-        }
-        .cta a:hover {
-            background-color: #ff3b3b;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-        @media (min-width: 700px) {
-            .services {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Afreach Creatives</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Afreach Creatives — social media, PR, branding, websites & posters." />
 </head>
 <body>
-
-    <header>
-        <h1>Afreach Creatives</h1>
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>Social Media Management</h3>
-                <p>We create, schedule, and manage engaging content for your brand across social platforms.</p>
-            </div>
-            <div class="service-card">
-                <h3>Public Relations (PR)</h3>
-                <p>We craft compelling brand stories and manage your public image to grow trust and credibility.</p>
-            </div>
-            <div class="service-card">
-                <h3>Logo Design</h3>
-                <p>Stand out with a unique, professional logo tailored to your brand’s identity.</p>
-            </div>
-            <div class="service-card">
-                <h3>Website Development</h3>
-                <p>Get a modern, mobile-friendly, and functional website that converts visitors into clients.</p>
-            </div>
+  <header class="header">
+    <div class="container header-row">
+      <div class="brand">
+        <!-- Logo placeholder — replace with /logo.png later -->
+        <div class="logo-placeholder" aria-hidden="true">AC</div>
+        <div class="brand-text">
+          <div class="brand-name">Afreach<span class="accent"> Creatives</span></div>
+          <div class="brand-sub">Creative agency — social media • PR • branding • web</div>
         </div>
+      </div>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+
+      <nav id="nav" class="nav">
+        <a href="#services">Services</a>
+        <a href="#posters">Posters</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="reveal">We design. We tell your story. We grow your brand.</h1>
+          <p class="lead reveal delay-1">
+            Afreach Creatives creates bold social campaigns, memorable logos, press-ready PR and high-converting websites.
+            Posters & visuals that cut through the noise.
+          </p>
+
+          <div class="actions reveal delay-2">
+            <a class="btn" href="#services">Our Services</a>
+            <a class="btn ghost" href="#posters">See Posters</a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal delay-3">
+          <div class="stat"><strong>10+</strong><span>Brands launched</span></div>
+          <div class="stat"><strong>5x</strong><span>Avg engagement lift</span></div>
+          <div class="stat"><strong>Full</strong><span>Creative + Web</span></div>
+        </aside>
+      </div>
     </section>
 
-    <section id="contact" class="cta">
-        <h2>Let’s Work Together</h2>
-        <a href="mailto:afreachcreatives@example.com">Contact Us</a>
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Services we offer</h2>
+        <div class="grid services-grid">
+          <article class="card reveal">
+            <div class="icon">📱</div>
+            <h3>Social Media</h3>
+            <p>Strategy, content calendars, creative posts and ad campaigns that convert.</p>
+          </article>
+
+          <article class="card reveal delay-1">
+            <div class="icon">📝</div>
+            <h3>PR & Outreach</h3>
+            <p>Storytelling, media lists and placements to build credibility.</p>
+          </article>
+
+          <article class="card reveal delay-2">
+            <div class="icon">🎨</div>
+            <h3>Logo & Branding</h3>
+            <p>Distinctive brand marks and visual systems for use across all channels.</p>
+          </article>
+
+          <article class="card reveal delay-3">
+            <div class="icon">🌐</div>
+            <h3>Web Design</h3>
+            <p>Responsive, SEO-friendly websites built to showcase your work and collect leads.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        &copy; 2025 Afreach Creatives. All Rights Reserved.
-    </footer>
+    <section id="posters" class="section posters-section">
+      <div class="container">
+        <h2 class="section-title reveal">Posters — Creative Samples</h2>
+        <p class="muted reveal delay-1">Replace these placeholders with your artwork by uploading images to the repo (folder: <code>/images/posters</code>).</p>
 
+        <div class="posters-grid">
+          <!-- Poster placeholders: replace each .poster > img src with your image path -->
+          <figure class="poster reveal">
+            <div class="poster-img">Poster 1</div>
+            <figcaption>Event Poster — bold typographic layout</figcaption>
+          </figure>
+
+          <figure class="poster reveal delay-1">
+            <div class="poster-img">Poster 2</div>
+            <figcaption>Product Launch — colorful visuals</figcaption>
+          </figure>
+
+          <figure class="poster reveal delay-2">
+            <div class="poster-img">Poster 3</div>
+            <figcaption>Brand Campaign — social card set</figcaption>
+          </figure>
+
+          <figure class="poster reveal delay-3">
+            <div class="poster-img">Poster 4</div>
+            <figcaption>Flyer — print-ready layout</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Portfolio</h2>
+        <p class="muted reveal delay-1">Add projects in the repository's <code>/images/portfolio</code> folder and link them here.</p>
+        <div class="portfolio-grid">
+          <div class="work-card reveal">Project 1</div>
+          <div class="work-card reveal delay-1">Project 2</div>
+          <div class="work-card reveal delay-2">Project 3</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid reveal">
+        <div>
+          <h2>Let's work together</h2>
+          <p class="muted">Email: <a href="mailto:hello@afreachcreatives.com">hello@afreachcreatives.com</a></p>
+          <p class="muted">Phone: +254 7XX XXX XXX</p>
+          <p><a class="btn" href="mailto:hello@afreachcreatives.com">Get a Quote</a></p>
+        </div>
+
+        <form class="contact-form" action="mailto:hello@afreachcreatives.com" method="post" enctype="text/plain">
+          <label><input name="Name" placeholder="Your name" required /></label>
+          <label><input name="Email" placeholder="Your email" required /></label>
+          <label><textarea name="Message" rows="4" placeholder="Tell us about your project" required></textarea></label>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>© <strong>Afreach Creatives</strong> 2025</div>
+      <div class="socials"><a href="#">Instagram</a> · <a href="#">LinkedIn</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
